@@ -1,0 +1,38 @@
+0x0000 addi x4 x0 A
+0x0004 jal x1 FF6
+0x0008 addi x6 x0 x20
+0x000C addi x11 x0 3
+0x0010 and x6 x6 x11
+0x0014 beg x11 x6 6
+0x0018 addi x10 x0 1
+0x001c SON
+0x0020 addi x10 x0 0
+0x0024 SON
+
+0x1FF0 add x7 x0 x4
+0x1FF4 addi x2 x0 0
+0x1FF8 addi x3 x0 1
+0x1FFC bge x7 x3 12
+0x2000 subi x2 x2 8
+0x2004 lw x20 x2 0
+0x2008 subi x2 x2 4
+0x200c bge x2 x0 4
+0x2010 jalr x25 x1 0
+
+0x2014 lw x21 x2 0
+0x2018 jal x31 10
+0x201c jal x30 -A
+
+0x2020 sw x2 x7 0
+0x2024 addi x2 x2 4
+0x2028 subi x7 x7 1
+0x202C jal x12 -18
+0x2030 add x15 x0 0
+
+0x2038 addi x22 x20 0
+0x203c addi x28 x0 2
+0x2040 bge x21 x28 4
+0x2044 jalr x30 x31 0
+0x2048 add x20 x20 x22
+0x204c subi x21 x21 1
+0x2050 jal x29 -8

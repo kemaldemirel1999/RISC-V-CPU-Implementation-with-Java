@@ -1,0 +1,3 @@
+Toplam Buyruk Sayisi:314
+Toplam Cevrim Sayisi:2485
+Yurutme Zamani:0.000004970000
